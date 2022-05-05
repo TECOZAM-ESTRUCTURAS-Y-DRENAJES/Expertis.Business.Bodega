@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Expertis.Application.ERP.Bodega", "..\..\Application\Expertis.Application.ERP.Bodega\Expertis.Application.ERP.Bodega.vbproj", "{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		R2|Any CPU = R2|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.R2|Any CPU.ActiveCfg = R2|Any CPU
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.R2|Any CPU.Build.0 = R2|Any CPU
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A19F0E-0DE2-45D6-AC2C-D3EC59E5AB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/solmicro
+		SccProjectUniqueName0 = Expertis.Business.Bodega.vbproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://tfs:8080/tfs/solmicro
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\..\\Application\\Expertis.Application.ERP.Bodega\\Expertis.Application.ERP.Bodega.vbproj
+		SccProjectName1 = ../../Application/Expertis.Application.ERP.Bodega
+		SccAuxPath1 = http://tfs:8080/tfs/solmicro
+		SccLocalPath1 = ..\\..\\Application\\Expertis.Application.ERP.Bodega
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

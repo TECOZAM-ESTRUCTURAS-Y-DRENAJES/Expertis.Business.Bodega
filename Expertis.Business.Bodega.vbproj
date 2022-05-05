@@ -1,0 +1,728 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9188FE7F-4CA2-4B58-8D76-9E0BDBE9E4AB}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Expertis.Business.Bodega</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Text</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Solmicro.Expertis.Business.Bodega</RootNamespace>
+    <StartupObject>Solmicro.Expertis.Business.Bodega.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Expertis.Business.BusinessEnum">
+      <Name>Expertis.Business.BusinessEnum</Name>
+      <HintPath>..\..\Bin\Expertis.Business.BusinessEnum.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.Financiero, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.General, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.Negocio">
+      <Name>Expertis.Business.Negocio</Name>
+      <HintPath>..\..\Bin\Expertis.Business.Negocio.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.Obra, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.Rules, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.BE.BusinessEngine, Version=5.0.0.0, Culture=neutral, PublicKeyToken=f4e70a047dadc395, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.DAL, Version=5.0.0.0, Culture=neutral, PublicKeyToken=f4e70a047dadc395, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.Global, Version=5.0.0.0, Culture=neutral, PublicKeyToken=f4e70a047dadc395, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Solmicro.Expertis.Business.BusinessEnum" />
+    <Import Include="Solmicro.Expertis.Business.General" />
+    <Import Include="Solmicro.Expertis.Business.Negocio" />
+    <Import Include="Solmicro.Expertis.Business.Obra" />
+    <Import Include="Solmicro.Expertis.Business.Rules" />
+    <Import Include="Solmicro.Expertis.Engine" />
+    <Import Include="Solmicro.Expertis.Engine.BE" />
+    <Import Include="Solmicro.Expertis.Engine.BE.BusinessProcesses" />
+    <Import Include="Solmicro.Expertis.Engine.DAL" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Common" />
+    <Import Include="System.Data.Linq" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Linq.Expressions" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analisis\BdgAnalisisVariable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analisis\BdgAnalisis.vb" />
+    <Compile Include="Barrica\BdgBarrica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgBodega.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgBusinessEnum.vb" />
+    <Compile Include="BdgDevolucionesPrecinta.vb" />
+    <Compile Include="BdgHistoricoPrecintas.vb" />
+    <Compile Include="BdgInterface.vb" />
+    <Compile Include="BdgParametroEntrada.vb" />
+    <Compile Include="Campo\BdgAnalisisCabecera.vb" />
+    <Compile Include="Campo\BdgAnalisisLineaValor.vb" />
+    <Compile Include="Campo\BdgObservatorio.vb" />
+    <Compile Include="Campo\BdgObservatorioFinca.vb" />
+    <Compile Include="Campo\BdgTipoObservatorio.vb" />
+    <Compile Include="Costes\CostWineData\CostWine.designer.vb" />
+    <Compile Include="Costes\CostWineData\CostWineDataContext.vb" />
+    <Compile Include="Cuadernos\BdgJustificacionFitosanitaria.vb" />
+    <Compile Include="Cuadernos\BdgMunicipioSigpac.vb" />
+    <Compile Include="Cuadernos\BdgProvinciaSigpac.vb" />
+    <Compile Include="Cuadernos\BdgRegistroFitosanitario.vb" />
+    <Compile Include="Cuadernos\BdgUsoSigPac.vb" />
+    <Compile Include="Diagrama\BdgDiagramaConfiguracion.vb" />
+    <Compile Include="Diagrama\BdgDiagramaConfiguracionVariable.vb" />
+    <Compile Include="MntoArticulos\BdgAnada.vb" />
+    <Compile Include="MntoArticulos\BdgCategoriaVino.vb" />
+    <Compile Include="MntoArticulos\BdgColorVino.vb" />
+    <Compile Include="MntoArticulos\BdgFormato.vb" />
+    <Compile Include="MntoArticulos\BdgFormatoEmbalaje.vb" />
+    <Compile Include="MntoArticulos\BdgFormatoEnvase.vb" />
+    <Compile Include="MntoArticulos\BdgTipoEmbalaje.vb" />
+    <Compile Include="MntoArticulos\BdgTipoEnvase.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\BdgGeneral.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlanMaterialLote.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlanMaterialLote.vb" />
+    <Compile Include="Operaciones\BdgParametrosOperaciones.vb" />
+    <Compile Include="Operaciones\DocumentoBdgOperacion.vb" />
+    <Compile Include="Operaciones\DocumentoBdgOperacionPlan.vb" />
+    <Compile Include="Operaciones\DocumentoBdgOperacionReal.vb" />
+    <Compile Include="Operaciones\ProcesoBdgOperacion.vb" />
+    <Compile Include="Operaciones\ProcesoBdgOperacionPlan.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\DataPrcPropuestaOperacion.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\DataPrcPropuestaOperacionResult.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\OperCab.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\PrcCrearPropuestaOperacion.vb">
+    </Compile>
+    <Compile Include="Operaciones\PropuestaOperacion\PrcPropuestaOperacion.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\ProcesoBdgPropuestaOperacion.vb" />
+    <Compile Include="Operaciones\PropuestaOperacion\ProcessInfoOperacion.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoObservatorio.vb" />
+    <Compile Include="Proveedor\BdgProveedorVariedad.vb" />
+    <Compile Include="Cuadernos\BdgAireLibre.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalAnalisisFitosanitario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalAsesor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalCabecera.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalCentro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalFertilizacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalFitosanitario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalMOD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalParcelasAgro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalParcelasMedioAmb.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgCuadernoCampoEstatalVenta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgEficacia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgEspecie.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgFincaZonaEspecifica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgGestionPlagas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgMaterialAnalizado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgMedidaIntervencion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgProblematicaFitosanitaria.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgTipoAbono.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgTipoFertilizacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgTipoZonaEspecifica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgZonaEspecifica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgFiltroCIGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgFiltroCISuperior.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuadernos\BdgFiltrosCIEmpresaAvanzada.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgDocumentoEntrada.vb" />
+    <Compile Include="Entradas\BdgEntradaFacturacion.vb" />
+    <Compile Include="Entradas\BdgExplotadorFincas.vb" />
+    <Compile Include="Entradas\BdgProcesoEntrada.vb" />
+    <Compile Include="Fincas\BdgClonVariedad.vb" />
+    <Compile Include="Fincas\BdgExplotacionFinca.vb" />
+    <Compile Include="Fincas\BdgFincaHistorico.vb" />
+    <Compile Include="Fincas\BdgFincaInversion.vb" />
+    <Compile Include="Fincas\BdgZonaFinca.vb" />
+    <Compile Include="Fincas\BdgFincaClonVariedad.vb" />
+    <Compile Include="Fincas\BdgFincaSigpac.vb" />
+    <Compile Include="Operaciones\BdgOperacionMaterialLote.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlan.vb" />
+    <Compile Include="Cartillistas\BdgCartillista.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartillistas\BdgCartillistaFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartillistas\BdgCartillistaMunicipio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartillistas\BdgCartillistaVariedad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartillistas\BdgCartillistaVendimia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgCatastro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartillistas\DocumentoCartillista.vb" />
+    <Compile Include="Cartillistas\ProcesoCartillista.vb" />
+    <Compile Include="Cierre\BdgCierreBodegaCabecera.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cierre\BdgCierreBodegaLinea.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgClasificacionTipoOp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contrato\BdgContrato.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contrato\BdgContratoLinea.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Costes\BdgCosteVendimiaHist.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Costes\BdgCosteVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Deposito\BdgDeposito.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Deposito\BdgDepositoVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diagrama\BdgDiagrama.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diagrama\BdgDiagramaDeposito.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntrada.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaCartillista.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaDeposito.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaProveedor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVariedad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVinoAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVinoDeposito.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVinoFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVinoVariedad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\BdgEntradaVto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entradas\DocumentoEntradaVino.vb" />
+    <Compile Include="Entradas\ProcesoEntradaVino.vb">
+    </Compile>
+    <Compile Include="Libros\BdgLibroEmbotellados.vb" />
+    <Compile Include="Libros\BdgLibroEntradasSalidasGranel.vb" />
+    <Compile Include="Libros\BdgLibroMovimientoProdElaboracionEno.vb" />
+    <Compile Include="Libros\BdgLibroPracticasEnologicas.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlanCentro.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlanMOD.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlan.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlanMaterial.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlanMOD.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlanVarios.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlanVarios.vb" />
+    <Compile Include="Operaciones\BdgOperacionVinoPlanCentro.vb" />
+    <Compile Include="Operaciones\BdgOperacionPlanMaterial.vb" />
+    <Compile Include="Operaciones\BdgTipoMermaVino.vb" />
+    <Compile Include="PartesTrabajo\BdgObjetivosCampo.vb" />
+    <Compile Include="PartesTrabajo\BdgPartesTrabajoFinca.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoMaterialLote.vb" />
+    <Compile Include="Tipos\BdgTipoOperacionRepartoCoste.vb" />
+    <Compile Include="Vino\BdgExplosionVino.vb" />
+    <Compile Include="Vendimia\BdgInformeVendimia.vb" />
+    <Compile Include="Vendimia\BdgTipoRecogida.vb" />
+    <Compile Include="Vino\BdgEstadoVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Barrica\BdgEstructuraBarrica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaCatastro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaExposicion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaFoto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaMunicipio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaOrientacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaPedregosidad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaPoda.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaPortaInjerto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaProveedor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaRelieve.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaVariable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgFincaVariedad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Foss\BdgFossFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Foss\BdgFossUva.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Foss\BdgFossVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgFraDesglose.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fincas\BdgGraficoFinca.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgGrupo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgMadera.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgMarco.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgMunicipio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nave\BdgNave.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nave\BdgNaveHist.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operaciones\BdgOperacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operaciones\BdgOperacionCentro.vb" />
+    <Compile Include="Operaciones\BdgOperacionMaterial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operaciones\BdgOperacionMOD.vb" />
+    <Compile Include="Operaciones\BdgOperacionVarios.vb" />
+    <Compile Include="Operaciones\BdgOperacionVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Barrica\BdgOrigenBarrica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgParametro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proveedor\BdgProveedor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proveedor\BdgProveedorVto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgRiego.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgStock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgSuelo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tarifa\BdgTarifa.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tarifa\BdgTarifaGrado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoOperacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoOperacionCentro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoOperacionMaterial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoOperacionMod.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoOperacionVarios.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos\BdgTipoVinedo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgTostado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgTransporte.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Variables\BdgVariable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Variables\BdgVariableValor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgVariedad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vendimia\BdgVendimia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vendimia\BdgVendimiaVto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVino.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoCentro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoCentroTasa.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoEstructura.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoMaterial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoMaterialLote.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoMod.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoVariable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\BdgVinoVarios.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BdgWorkClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoCentro.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoMaterial.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoMod.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoVarios.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupado.vb" />
+    <Compile Include="PartesTrabajo\ObraParteAgrupadoLinea.vb" />
+    <Compile Include="ScriptEngine.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vino\WineData\Wine.designer.vb" />
+    <Compile Include="Vino\WineData\WineDataContext.vb" />
+    <None Include="Costes\CostWineData\CostWine.dbml.layout">
+      <DependentUpon>CostWine.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Tipos\BdgTipoOperacionMod.resx">
+      <DependentUpon>BdgTipoOperacionMod.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Vino\WineData\Wine.dbml.layout">
+      <DependentUpon>Wine.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Costes\CostWineData\CostWine.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CostWine1.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vino\WineData\Wine.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Wine1.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAA\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

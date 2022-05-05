@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="xExpertisDev" Class="CostWineDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SERVIDOR05;Initial Catalog=xExpertisDev;Persist Security Info=True;User ID=sa" SettingsObjectName="Solmicro.Expertis.Business.Bodega.My.MySettings" SettingsPropertyName="xExpertisDevConnectionString1" Provider="System.Data.SqlClient" />
+</Database>

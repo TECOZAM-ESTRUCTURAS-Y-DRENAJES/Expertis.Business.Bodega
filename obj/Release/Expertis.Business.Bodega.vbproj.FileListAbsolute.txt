@@ -1,0 +1,8 @@
+C:\Builds\2\Producto\Expertis50R2_Release\bin\Release\Expertis.Business.Bodega.dll.config
+C:\Builds\2\Producto\Expertis50R2_Release\bin\Release\Expertis.Business.Bodega.dll
+C:\Builds\2\Producto\Expertis50R2_Release\bin\Release\Expertis.Business.Bodega.pdb
+C:\Builds\2\Producto\Expertis50R2_Release\src\Main\Source\Business\Expertis.Business.Bodega\obj\Release\ResolveAssemblyReference.cache
+C:\Builds\2\Producto\Expertis50R2_Release\src\Main\Source\Business\Expertis.Business.Bodega\obj\Release\Solmicro.Expertis.Business.Bodega.BdgTipoOperacionMod.resources
+C:\Builds\2\Producto\Expertis50R2_Release\src\Main\Source\Business\Expertis.Business.Bodega\obj\Release\Expertis.Business.Bodega.vbproj.GenerateResource.Cache
+C:\Builds\2\Producto\Expertis50R2_Release\src\Main\Source\Business\Expertis.Business.Bodega\obj\Release\Expertis.Business.Bodega.dll
+C:\Builds\2\Producto\Expertis50R2_Release\src\Main\Source\Business\Expertis.Business.Bodega\obj\Release\Expertis.Business.Bodega.pdb
